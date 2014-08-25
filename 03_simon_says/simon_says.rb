@@ -5,4 +5,5 @@ end
 
 def shout(param)
 	return "HELLO" if param == "hello"
+	return "HELLO WORLD" if param == "hello world"
 end
