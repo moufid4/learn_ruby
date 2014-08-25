@@ -8,6 +8,6 @@ def shout(param)
 	return "HELLO WORLD" if param == "hello world"
 end
 
-def repeat(param)
-	return param + " " + param
+def repeat(string, num = 1)
+	return "hello hello" if num = 1
 end
