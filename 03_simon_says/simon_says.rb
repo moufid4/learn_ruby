@@ -30,3 +30,6 @@ end
 #     end
 # end
 
+def start_of_word(string, num)
+	return string[0,num]
+end
