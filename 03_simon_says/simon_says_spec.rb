@@ -20,7 +20,7 @@ describe "Simon says" do
     it "should shout hello" do
       # calling the method shout and passing in "hello"
       # should return "HELLO"
-      expect(shout("hello")).to eq("HELLO")
+      expect(shout("test")).to eq("TEST")
     end
 
     it "should shout multiple words" do

@@ -1,13 +1,32 @@
 def echo(param)
-	 return "hello" if param == "hello"
-	 return "bye" if param == "bye"
+	"#{param}"
 end
 
 def shout(param)
-	return "HELLO" if param == "hello"
-	return "HELLO WORLD" if param == "hello world"
+	"#{param}".upcase
 end
 
-def repeat(string, num = 1)
-	return "hello hello" if num = 1
+def repeat(string, num=1)
+	result = ""
+	
+	if num == 1 
+		return "#{string} #{string}"
+	else
+		num.times do 
+			result = result + string + " "
+		end
+			return result.chomp(" ")
+	end
 end
+
+# Fabio code
+# def repeat(string, num=1)
+#     if num < 3
+#       return "#{string} #{string}"
+#     else
+#       result = ''
+#       num.times { result << string << ' ' }
+#       return result.chomp(' ')
+#     end
+# end
+
