@@ -33,3 +33,8 @@ end
 def start_of_word(string, num)
 	return string[0,num]
 end
+
+def first_word(string)
+	string = string.split.first(1).join(' ') 
+	return string
+end
