@@ -38,3 +38,7 @@ def first_word(string)
 	string = string.split.first(1).join(' ') 
 	return string
 end
+
+def titleize(param)
+	return param.capitalize
+end
