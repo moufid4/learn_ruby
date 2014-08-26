@@ -40,5 +40,5 @@ def first_word(string)
 end
 
 def titleize(param)
-	return param.capitalize
+	return param.split(" ").each{|word| word.capitalize!}.join(" ")
 end
