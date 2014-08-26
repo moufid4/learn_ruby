@@ -39,6 +39,23 @@ def first_word(string)
 	return string
 end
 
+# def titleize(param)
+# 	return param.split(" ").each{|word| word.capitalize!}.join(" ")
+# end
+
 def titleize(param)
-	return param.split(" ").each{|word| word.capitalize!}.join(" ")
+	arr = []
+	param.split(" ").each do |word|
+		arr << word
+	end
+
+	arr[0].capitalize!
+	arr[-1].capitalize!
+	arr.each do |word|
+		if word.length > 4 
+			word.capitalize!
+		end
+	end
+	return arr.join(" ")
 end
+
